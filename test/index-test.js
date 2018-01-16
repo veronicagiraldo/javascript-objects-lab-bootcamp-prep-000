@@ -40,7 +40,12 @@ describe('Objects', function() {
     })
   })
 
-  describe('deleteFromObjectByKey(object, key)', function() {
+  describe( const newObj = Object.assign({}, object)
+
+  delete newObj[key]
+
+  return newObj
+}', function() {
     it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
       var obj = { prop: 1 }
       var newObj = deleteFromObjectByKey(obj, 'prop')
